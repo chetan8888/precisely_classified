@@ -8,7 +8,7 @@
   4. Rishabh
   
 ## Dataset - Credit Card Default
-The selected dataset is from the UCI Machine Learning Repository. The [Dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) has information about default payments in Taiwan. It contains information on default payments, demographic factors, credit data, history of payment, and bill statements of credit card clients in Taiwan from April 2005 to September 2005. 
+The selected dataset is from the UCI Machine Learning Repository. The [Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing#) is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. 
 
 ## Motivation 
 Credit card has been one of the most booming businesses in banking sectors and has its pros and cons. With a plethora of credit card users the default rate is also increasing which is jeopardizing the banking sector. So to tackle this evolvong problem we can try to predict in time which customer can result in a default.
