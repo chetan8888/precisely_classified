@@ -12,17 +12,15 @@ This project will enable the bank to develop a more granular understanding of it
 By analyzing customer features, such as demographics and transaction history, the bank will be able to predict customer saving behaviours and identify which type of customers is more likely to make term deposits. The bank can then focus its marketing efforts on those customers. This will not only allow the bank to secure deposits more effectively but also increase customer satisfaction by reducing undesirable advertisements for certain customers.
 
 ### Methods Used
-* Inferential Statistics
 * Machine Learning
+* Data Cleaning
 * Data Visualization
-* Predictive Modeling
-* etc.
 
 ### Technologies
 * Kaggle Notebooks
 * Python
 * Pandas, jupyter
-* etc. 
+* Seaborn
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
