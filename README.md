@@ -16,11 +16,17 @@ By analyzing customer features, such as demographics and transaction history, th
 * Data Cleaning
 * Data Visualization
 
-### Technologies
+### Technologies Used 
 * Kaggle Notebooks
 * Python
-* Pandas, jupyter
+* Pandas
 * Seaborn
+* matplotlib
+* flask
+* Jupyter Notebook
+
+# Challenges - 
+* **Class Imbalance**
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
@@ -55,11 +61,15 @@ Label | Description
 |April 11 -  April 18|  Selection of Dataset |
 |April 19 - 26 April|  Data Cleaning & Data Exploration  |
 
+
 ## Featured Notebooks/Analysis/Deliverables
 * [Data Exploration](https://www.kaggle.com/code/prank939/cmpe255-finalproject-dataexploration)
 <!-- * [Notebook/Markdown/Slide DeckTitle](link)
 * [Blog Post](link) -->
 
+## Domain Research Reference Papers 
+
+1. [An insight into the effects of class imbalance and sampling on classification accuracy in credit risk assessment](https://www.researchgate.net/publication/329106374_An_insight_into_the_effects_of_class_imbalance_and_sampling_on_classification_accuracy_in_credit_risk_assessment)
 ## Contributing Team Members
   1. Anupriya
   2. Chetan
