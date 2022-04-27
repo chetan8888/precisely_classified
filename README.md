@@ -25,7 +25,7 @@ By analyzing customer features, such as demographics and transaction history, th
 * flask
 * Jupyter Notebook
 
-# Challenges - 
+## Challenges - 
 * **Class Imbalance - ** According to the initial data exploration we have found that there is a huge class imbalance in the target label. This is generally because data mining models usually tend to be i nfluenced with the majority class. The class imbalance could consequently lead to  the minority being misclassified and a bad model prediction accuracy.Solving this problem is a major challenge especially in customer related data such churn prediction where the class of interest is the minority and customer response in direct marketing for a product or a service.
 
 <!-- ## Project Description
