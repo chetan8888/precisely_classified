@@ -71,7 +71,7 @@ Label | Description
 
 1. [An insight into the effects of class imbalance and sampling on classification accuracy in credit risk assessment](https://www.researchgate.net/publication/329106374_An_insight_into_the_effects_of_class_imbalance_and_sampling_on_classification_accuracy_in_credit_risk_assessment)
 2. [Machine Learning Modelsfor Bank Telemarketing Classification and Prediction](http://www.ijaema.com/gallery/119-december-3025.pdf)
-3. Handling Class Imbalance In Direct Marketing Dataset Using A Hybrid Data and Algorithmic Level Solutions(https://research.gold.ac.uk/id/eprint/17248/1/2016_SAI_Computing_IEEE_Class_imbalance.pdf)
+3. [Handling Class Imbalance In Direct Marketing Dataset Using A Hybrid Data and Algorithmic Level Solutions](https://research.gold.ac.uk/id/eprint/17248/1/2016_SAI_Computing_IEEE_Class_imbalance.pdf)
 ## Contributing Team Members
   1. Anupriya
   2. Chetan
