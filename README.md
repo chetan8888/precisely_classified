@@ -26,10 +26,10 @@ By analyzing customer features, such as demographics and transaction history, th
 * Jupyter Notebook
 
 # Challenges - 
-* **Class Imbalance**
+* **Class Imbalance - ** According to the initial data exploration we have found that there is a huge class imbalance in the target label. This is generally because data mining models usually tend to be i nfluenced with the majority class. The class imbalance could consequently lead to  the minority being misclassified and a bad model prediction accuracy.Solving this problem is a major challenge especially in customer related data such churn prediction where the class of interest is the minority and customer response in direct marketing for a product or a service.
 
-## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+<!-- ## Project Description
+(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here) -->
 
 ## Data Description 
 
@@ -70,6 +70,8 @@ Label | Description
 ## Domain Research Reference Papers 
 
 1. [An insight into the effects of class imbalance and sampling on classification accuracy in credit risk assessment](https://www.researchgate.net/publication/329106374_An_insight_into_the_effects_of_class_imbalance_and_sampling_on_classification_accuracy_in_credit_risk_assessment)
+2. [Machine Learning Modelsfor Bank Telemarketing Classification and Prediction](http://www.ijaema.com/gallery/119-december-3025.pdf)
+3. Handling Class Imbalance In Direct Marketing Dataset Using A Hybrid Data and Algorithmic Level Solutions(https://research.gold.ac.uk/id/eprint/17248/1/2016_SAI_Computing_IEEE_Class_imbalance.pdf)
 ## Contributing Team Members
   1. Anupriya
   2. Chetan
