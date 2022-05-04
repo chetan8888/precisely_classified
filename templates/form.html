@@ -5,5 +5,14 @@
  {% endblock %}
 
  {% block body %}
- <h1>Form Page</h1>
+ 
+    <form action="/post_form" method="POST">
+
+        Name: <input type="text" name="cust_name" id="cust_name" >
+
+        <input type="submit" value="Submit" >
+
+    </form>
+
+
  {% endblock %}

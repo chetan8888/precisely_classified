@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -15,5 +15,13 @@ def home():
 def form():
     return render_template('form.html')
 
+@app.route('/post_form', methods=['GET','POST'])
+def post_form():
+    if request.method == 'POST':
+        # Call the ML model here
+        cust_name = request.form['cust_name']
+        return render_template('result.html', cust_name=cust_name)
+    return render_template('error.html')
 
-app.run(port=3000, debug=True) #specify the port for the app tp run
+if __name__ == '__main__':
+    app.run(port=3000, debug=True) #specify the port for the app tp run
