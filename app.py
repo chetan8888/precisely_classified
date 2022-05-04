@@ -16,7 +16,4 @@ def form():
     return render_template('form.html')
 
 
-
-
-
-app.run(port=3000) #specify the port for the app tp run
+app.run(port=3000, debug=True) #specify the port for the app tp run
