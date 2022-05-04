@@ -10,4 +10,13 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+
+
+
+
 app.run(port=3000) #specify the port for the app tp run
