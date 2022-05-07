@@ -1,52 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        
-        <title> {%block title%} {% endblock %} </title>
-    </head>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+    ></script>
 
-    <body style="height:100vh">
-        
-        <nav class="navbar navbar-expand-lg navbar navbar-light my-2 my-sm-0" style="background-color: #e3f2fd; ">
-                <a class="navbar-brand " href="#"> SNN IMAGE RECOGNITION APP</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
-                        <a class="nav-link " href= "{{ url_for('home')}}"> Home <span class="sr-only">(current)</span></a>
-                      </li>
-                    
-                    </ul> 
-                    <form class="form-inline my-2 my-lg-0">
-                      <button class=" btn btn-link my-2 my-sm-0" class="btn btn-link" href="{{ url_for('home')}}" type="submit"> Back </button>
-                    </form>
-                  </div>
-        </nav>
+    <title>{%block title%} {% endblock %}</title>
+  </head>
 
-          <div id="particle-js" style="position: fixed; top: 56px;left:0; right: 0; height:inherit; background-color: #0099cc;"> </div>
-        {% block content %}
-        {% endblock %}
-      
-      
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" ></script>
-        <script>
-          particlesJS.load('particle-js', 'static/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-          });
-        </script>
-    </body>
+  <body style="height: 100vh">
+    <nav
+      class="navbar navbar-expand-lg navbar navbar-light my-2 my-sm-0"
+      style="background-color: #e3f2fd"
+    >
+      <a class="navbar-brand" href="#"> CUSTOMER RETENTION APP</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('home')}}">
+              Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            class="btn btn-link my-2 my-sm-0"
+            class="btn btn-link"
+            href="{{ url_for('home')}}"
+            type="submit"
+          >
+            Back
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div
+      id="particle-js"
+      style="
+        position: fixed;
+        top: 56px;
+        left: 0;
+        right: 0;
+        height: inherit;
+        background-color: #0099cc;
+      "
+    ></div>
+    {% block content %} {% endblock %}
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particle-js", "static/particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  </body>
 </html>
-
-
