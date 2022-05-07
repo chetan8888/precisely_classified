@@ -1,4 +1,3 @@
-
 {% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
 content %}
 <div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
@@ -8,163 +7,138 @@ content %}
         class="card text-center card border-info mb-3"
         style="width: 626px; height: auto"
       >
-      <form>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >Job</label
-            >
+        <form action="{{ url_for('handle_data') }}" method="post">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="job">Job</label>
+            </div>
+            <select class="custom-select" id="job" name="job">
+              <option selected>Choose...</option>
+              <option value="blue-collar">blue-collar</option>
+              <option value="entrepreneur">entrepreneur</option>
+              <option value="housemaid">housemaid</option>
+              <option value="management">management</option>
+              <option value="retired">retired</option>
+              <option value="self-employed">self-employed</option>
+              <option value="services">services</option>
+              <option value="student">student</option>
+              <option value="technician">technician</option>
+              <option value="unemployed">unemployed</option>
+              <option value="unknown">unknown</option>
+            </select>
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
-            <option value="1">blue-collar</option>
-            <option value="2">entrepreneur</option>
-            <option value="3">housemaid</option>
-            <option value="4">management</option>
-            <option value="5">retired</option>
-            <option value="6">self-employed</option>
-            <option value="7">services</option>
-            <option value="8">student</option>
-            <option value="9">technician</option>
-            <option value="10">unemployed</option>
-            <option value="11">unknown</option>
-          </select>
-        </div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >Education</label
-            >
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="education">Education</label>
+            </div>
+            <select class="custom-select" id="education" name="education">
+              <option selected>Choose...</option>
+              <option value="primary">primary</option>
+              <option value="secondary">secondary</option>
+              <option value="tertiary">tertiary</option>
+              <option value="unknown">unknown</option>
+            </select>
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
-            <option value="1">primary</option>
-            <option value="2">secondary</option>
-            <option value="3">tertiary</option>
-            <option value="4">unknown</option>
-          </select>
-        </div>
 
-        <div class="form-group">
-          <label for="exampleInputEmail1">Age</label>
-          <input
-            type="number"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Age"
-          />
-         
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Balance</label>
-          <input
-            type="number"
-            class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Balance"
-          />
-        </div>
-        <div>
-          <label>Default</label>
-          <div class="form-check">
+          <div class="form-group">
+            <label for="age">Age</label>
             <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
+              type="number"
+              class="form-control"
+              id="age"
+              name="age"
+              placeholder="Age"
             />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Yes
-            </label>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-              checked
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              No
-            </label>
-          </div>
-        </div>
 
-        <div>
-          <label>Housing</label>
-          <div class="form-check">
+          <div class="form-group">
+            <label for="balance">Balance</label>
             <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
+              type="number"
+              class="form-control"
+              id="balance"
+              name="balance"
+              placeholder="Balance"
             />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Yes
-            </label>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-              checked
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              No
-            </label>
-          </div>
-        </div>
 
-        <div>
-          <label>Loan</label>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Yes
-            </label>
+          <div>
+            <label>Default</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="default"
+                id="default1"
+                value="yes"
+              />
+              <label class="form-check-label" for="default1"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="default"
+                id="default2"
+                value="no"
+              />
+              <label class="form-check-label" for="default2"> No </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-              checked
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              No
-            </label>
-          </div>
-        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <div>
+            <label>Housing</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="housing"
+                id="housing1"
+                value="yes"
+              />
+              <label class="form-check-label" for="housing1"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="housing"
+                id="housing2"
+                value="no"
+              />
+              <label class="form-check-label" for="housing2"> No </label>
+            </div>
+          </div>
+
+          <div>
+            <label>Loan</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="loan"
+                id="loan1"
+                value="yes"
+              />
+              <label class="form-check-label" for="loan1"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="loan"
+                id="loan2"
+                value="no"
+              />
+              <label class="form-check-label" for="loan2"> No </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
-
-    <!-- <div class="card-deck">
-      <div
-        class="card text-center card border-info mb-3"
-        style="width: 18rem; height: auto"
-      >
-        <div class="card-body col">
-          <h4 class="card-title">Output</h4>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text">View the reconstructed Image</p>
-          <a href="{{url_for('home')}}" class="card-link"> Click Here </a>
-        </div>
-      </div>
-    </div> -->
 
     {% endblock %}
   </div>
