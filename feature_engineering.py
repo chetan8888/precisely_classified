@@ -14,6 +14,9 @@ class featureEngineering:
 
     def createDummies(self):
         cat_df_dummies = pd.get_dummies( self.df, columns=['job', 'education'])
+        cat_df_dummies["age"] = pd.to_numeric(cat_df_dummies["age"])
+        print("datatype", cat_df_dummies.age.dtype)
+        cat_df_dummies["balance"] = pd.to_numeric(cat_df_dummies["balance"])
         cat_df_dummies['housing'] = cat_df_dummies['housing'].map({'yes': 1, 'no': 0})
         cat_df_dummies['default'] = cat_df_dummies['default'].map({'yes': 1, 'no': 0})
         cat_df_dummies['loan'] = cat_df_dummies['loan'].map({'yes': 1, 'no': 0})
