@@ -51,25 +51,25 @@ def handle_data():
         'primary': 0,
         'secondary': 0,
         'tertiary': 0,
-        'unknown': 0
+        'edu_unknown': 0
     }
     dict[request.form["job"]] = 1
     dict[request.form["education"]] = 1
-    dict[request.form["education"]] = 1
+    # dict[request.form["education"]] = 1
     dict["age"] = request.form["age"]
     dict["balance"] = request.form["balance"]
     dict["default"] = request.form["default"]
     dict["housing"] = request.form["housing"]
     dict["loan"] = request.form["loan"]
-    # print("dict", dict)
-    # print("dict values", dict.values())
+    print("dict", dict)
+    print("dict values", dict.values())
     df = pd.DataFrame([dict.values()], columns=['age', 'default', 'balance', 'housing', 'loan', 'job_admin.',
                                                         'job_blue-collar', 'job_entrepreneur', 'job_housemaid',
                                                         'job_management', 'job_retired', 'job_self-employed', 'job_services',
                                                         'job_student', 'job_technician', 'job_unemployed', 'job_unknown',
                                                         'education_primary', 'education_secondary', 'education_tertiary',
                                                         'education_unknown'])
-    print(df)
+    print(dict)
     ans = processing(df, MODEL_PICKLE_PATH)
     print("answer", ans)
     # print("tell", request.form.to_dict())
