@@ -13,7 +13,8 @@ class featureEngineering:
         self.df = df
 
     def createDummies(self):
-        cat_df_dummies = pd.get_dummies( self.df, columns=['job', 'education'])
+        cat_df_dummies = self.df
+        # cat_df_dummies = pd.get_dummies( self.df, columns=['job', 'education'])
         cat_df_dummies["age"] = pd.to_numeric(cat_df_dummies["age"])
         print("datatype", cat_df_dummies.age.dtype)
         cat_df_dummies["balance"] = pd.to_numeric(cat_df_dummies["balance"])
