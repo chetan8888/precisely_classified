@@ -12,7 +12,8 @@ app = Flask(__name__)
 
 
 def processing(df, MODEL_PICKLE_PATH):
-    main(df, MODEL_PICKLE_PATH)
+    prob, pred = main(df, MODEL_PICKLE_PATH)
+    return prob, pred
 
 
 @app.route('/')
@@ -61,17 +62,18 @@ def handle_data():
     dict["default"] = request.form["default"]
     dict["housing"] = request.form["housing"]
     dict["loan"] = request.form["loan"]
-    print("dict", dict)
-    print("dict values", dict.values())
+    # print("dict", dict)
+    # print("dict values", dict.values())
     df = pd.DataFrame([dict.values()], columns=['age', 'default', 'balance', 'housing', 'loan', 'job_admin.',
                                                         'job_blue-collar', 'job_entrepreneur', 'job_housemaid',
                                                         'job_management', 'job_retired', 'job_self-employed', 'job_services',
                                                         'job_student', 'job_technician', 'job_unemployed', 'job_unknown',
                                                         'education_primary', 'education_secondary', 'education_tertiary',
                                                         'education_unknown'])
-    print(dict)
-    ans = processing(df, MODEL_PICKLE_PATH)
-    print("answer", ans)
+    # print(dict)
+    prob, pred = processing(df, MODEL_PICKLE_PATH)
+    print("prob", prob)
+    print("prob", pred)
     # print("tell", request.form.to_dict())
     # form_data = request.form["job"]
     # form_data1 = request.form["education"]
