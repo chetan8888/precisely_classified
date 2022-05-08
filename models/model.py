@@ -24,13 +24,13 @@ class LogisticRegressionModel:
 
     def predict(self, df) -> None:
         y_pred_log = self.model.predict(df)
-        print("predict", y_pred_log)
+        # print("predict", y_pred_log)
         return y_pred_log
 
-    def score(self, df) -> None:
-        score = self.model.score(df)
-        print("score", score)
-        return score  
+    def predict_probability(self, df) -> None:
+        score = self.model.predict_proba(df)
+        # print("score", score)
+        return score[0][1]  
 
     def compute_accuracy(self,y_test, y_pred_log) -> None:
         acc = accuracy_score(y_test, y_pred_log)

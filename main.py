@@ -26,10 +26,11 @@ def main(df, MODEL_PICKLE_PATH):
     m = LogisticRegressionModel(model)
     print("model loaded")
     pred = m.predict(X)
-    # # score = m.score(X)
-    print("pred", pred)
+    score = m.predict_probability(X)
+    # print("pred", pred[0])
+    # print("score", score)
     # m.compute_accuracy()
-    return pred
+    return pred, score
 
 
 
