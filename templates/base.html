@@ -7,6 +7,19 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="../static/home.css" rel="stylesheet" type="text/css">
+    
+      {% if request.endpoint == '/form' %}
+    <link href="../static/form.css" rel="stylesheet" type="text/css">
+{% elif request.endpoint == '/form' %}
+    <link href="../static/form.css" rel="stylesheet" type="text/css">
+{% endif %}
+
     <script
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
@@ -16,43 +29,16 @@
   </head>
 
   <body style="height: 100vh">
-    <nav
-      class="navbar navbar-expand-lg navbar navbar-light my-2 my-sm-0"
-      style="background-color: #e3f2fd"
-    >
-      <a class="navbar-brand" href="#"> CUSTOMER RETENTION APP</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('home')}}">
-              Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button
-            class="btn btn-link my-2 my-sm-0"
-            class="btn btn-link"
-            href="{{ url_for('home')}}"
-            type="submit"
-          >
-            Back
-          </button>
-        </form>
+    <div id="header-top" class="center clearfix">
+      <h1 id="logo">
+        <img height="60" width="272" alt="Banco de Portugal" title="Banco de Portugal" src="//www.bportugal.pt/sites/default/files/imagens/3loilpa0he-bplogo-en.png"></a>					</h1>
+      <div id="quick-links">
+        <div class="float-r">
+          <a href="/en/area-cidadao"><i class="bdpicon-user"></i><span>Personal</span></a>				<a href="/en/area-empresa"><i class="bdpicon-company"></i><span>Corporate</span></a>			</div>
       </div>
-    </nav>
+      
+      
+    </div>
 
     <div
       id="particle-js"
@@ -62,7 +48,7 @@
         left: 0;
         right: 0;
         height: inherit;
-        background-color: #0099cc;
+        background-color: #85bb65;
       "
     ></div>
     {% block content %} {% endblock %}

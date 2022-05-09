@@ -1,0 +1,67 @@
+.homeimg {
+  width : 678px;
+  height : auto;
+}
+body {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Abel", sans-serif;
+  font-weight: 900;
+}
+.homecontainer {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 750px;
+  transition: all 1s ease;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 40px 25px;
+  border-radius: 1em;
+  border-top-left-radius: 0;
+  box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.15);
+}
+.homecontainer h3 {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  height: 35px;
+  background: #fff;
+  color: #444;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 35px;
+  --notchSize: 10px;
+  clip-path: polygon(
+    0% var(--notchSize),
+    var(--notchSize) 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+.buttonrow {
+  margin: 35px 0 0;
+  text-align: right;
+  width: 100%;
+}
+button {
+  background: var(--shared-background);
+  border: 3px solid #fff;
+  border-radius: 0.2em;
+  padding: 5px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  cursor: pointer;
+}
