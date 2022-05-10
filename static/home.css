@@ -55,7 +55,7 @@ h4 {
   text-align: right;
   width: 100%;
 }
-button {
+.confirm, button {
   background: var(--shared-background);
   border: 3px solid #fff;
   border-radius: 0.2em;

@@ -1,6 +1,5 @@
 {% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
 content %}
-<link rel="stylesheet" href="../static/home.css">
 
 <div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
   <div class="container pt-5" stlye="height:100%">
@@ -30,7 +29,10 @@ content %}
       <h4>Click to find out!</h4>
       
       <div class="flexrow flow-right buttonrow">
-        <button class="confirm" disabled="disabled">Predict</button>
+        <a href="{{url_for('form')}}" class="confirm card-link"> Predict </a>
+        <!-- <button type="button" onclick="window.location.href='{{ url_for('form') }}';" >
+          Predict
+        </button> -->
       </div>
     </div>
 
