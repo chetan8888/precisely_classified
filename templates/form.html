@@ -2,11 +2,8 @@
 content %}
 <div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
   <div class="container pt-5" stlye="height:100%">
-    <div class="card-deck">
-      <div
-        class="homecontainer card text-center card border-info mb-3"
-        style="width: 626px; height: auto;
-      >
+    <div class="card-deck" style="justify-content: center; align-items: center">
+      <div class="homecontainer card text-center card border-info mb-3" style="width: 626px; height: auto">
         <form action="{{ url_for('handle_data') }}" method="post">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -42,100 +39,60 @@ content %}
           </div>
 
           <div class="form-group">
-            <label for="age">Age</label>
-            <input
-              type="number"
-              class="form-control"
-              id="age"
-              name="age"
-              placeholder="Age"
-            />
+            <label for="age"><b>Age</b></label>
+            <input type="number" class="form-control" id="age" name="age" placeholder="Age" />
           </div>
 
           <div class="form-group">
-            <label for="balance">Balance</label>
-            <input
-              type="number"
-              class="form-control"
-              id="balance"
-              name="balance"
-              placeholder="Balance"
-            />
+            <label for="balance"><b>Balance</b></label>
+            <input type="number" class="form-control" id="balance" name="balance" placeholder="Balance" />
           </div>
 
           <div>
-            <label>Default</label>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="default"
-                id="default1"
-                value="yes"
-              />
-              <label class="form-check-label" for="default1"> Yes </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="default"
-                id="default2"
-                value="no"
-              />
-              <label class="form-check-label" for="default2"> No </label>
+            <label><b>Default</b></label>
+            <div style="margin-bottom: 1rem;">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="default" id="default1" value="yes" />
+                <label class="form-check-label" for="default1"> Yes </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="default" id="default2" value="no" />
+                <label class="form-check-label" for="default2"> No </label>
+              </div>
             </div>
           </div>
 
           <div>
-            <label>Housing</label>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="housing"
-                id="housing1"
-                value="yes"
-              />
-              <label class="form-check-label" for="housing1"> Yes </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="housing"
-                id="housing2"
-                value="no"
-              />
-              <label class="form-check-label" for="housing2"> No </label>
+            <label><b>Housing</b></label>
+            <div style="margin-bottom: 1rem;">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="housing" id="housing1" value="yes" />
+                <label class="form-check-label" for="housing1"> Yes </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="housing" id="housing2" value="no" />
+                <label class="form-check-label" for="housing2"> No </label>
+              </div>
             </div>
           </div>
 
           <div>
-            <label>Loan</label>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="loan"
-                id="loan1"
-                value="yes"
-              />
-              <label class="form-check-label" for="loan1"> Yes </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="loan"
-                id="loan2"
-                value="no"
-              />
-              <label class="form-check-label" for="loan2"> No </label>
+            <label><b>Loan</b></label>
+            <div style="margin-bottom: 1rem;">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="loan" id="loan1" value="yes" />
+                <label class="form-check-label" for="loan1"> Yes </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="loan" id="loan2" value="no" />
+                <label class="form-check-label" for="loan2"> No </label>
+              </div>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" style="margin-top: 1rem">
+            Submit
+          </button>
         </form>
       </div>
     </div>
