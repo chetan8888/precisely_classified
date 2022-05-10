@@ -1,8 +1,11 @@
 {% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
 content %}
+
+<link href="../static/home.css" rel="stylesheet" type="text/css">
+
 <div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
   <div class="container pt-5" stlye="height:100%">
-    <div class="card-deck">
+    <!-- <div class="card-deck">
       <div
         class="card text-center card border-info mb-3"
         style="width: 626px; height: auto"
@@ -11,26 +14,43 @@ content %}
           <h4 class="card-title">
             Please submit some details to identify the accurate results.
           </h4>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
           <p class="card-text">Click on the button below to submit the form</p>
           <a href="{{url_for('form')}}" class="card-link"> Submit Form </a>
         </div>
       </div>
+    </div> -->
+    
+    <div class="homecontainer">
+      <h3><span class="material-icons">
+        fingerprint
+        </span> Welcome Admin!</h3>
+      <img class="homeimg" src="https://www.bportugal.pt/sites/default/files/styles/banner_homepage50/public/imagens/destaques/grande_carrossel_atividade_de_cooperacao.png?itok=y2qvSRZU" />
+      
+      <h4>Solve the puzzle! Find out if the customer will buy the term deposit.</h4>
+      <h4>Click to find out!</h4>
+      
+      <div class="flexrow flow-right buttonrow">
+        <a href="{{url_for('form')}}" class="confirm card-link"> Predict </a>
+        <!-- <button type="button" onclick="window.location.href='{{ url_for('form') }}';" >
+          Predict
+        </button> -->
+      </div>
     </div>
 
-    <div class="card-deck">
+    <!-- <div class="card-deck">
       <div
         class="card text-center card border-info mb-3"
         style="width: 18rem; height: auto"
       >
         <div class="card-body col">
           <h4 class="card-title">Output</h4>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> 
           <p class="card-text">View the reconstructed Image</p>
           <a href="{{url_for('home')}}" class="card-link"> Click Here </a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     {% endblock %}
   </div>

@@ -71,9 +71,11 @@ def handle_data():
                                                         'education_primary', 'education_secondary', 'education_tertiary',
                                                         'education_unknown'])
     # print(dict)
-    prob, pred = processing(df, MODEL_PICKLE_PATH)
+    pred, prob = processing(df, MODEL_PICKLE_PATH)
+    pred = pred[0]
     print("prob", prob)
-    print("prob", pred)
+    print("pred", pred)
+    # return render_template("output.html", prob=prob, pred=pred)
     # print("tell", request.form.to_dict())
     # form_data = request.form["job"]
     # form_data1 = request.form["education"]
@@ -89,7 +91,7 @@ def handle_data():
     # print("form data4", form_data4)
     # print("form data5", form_data5)
     # print("form data6", form_data6)
-    return render_template("form.html")
+    return render_template("output.html", pred=pred, prob=prob)
     # your code
     # return a response
 
