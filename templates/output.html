@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %} Output Page {% endblock %}
+{% block
+content %}
+<div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
+  <div class="container pt-5" stlye="height:100%">
+    <div class="card-deck">
+      <div
+        class="card text-center card border-info mb-3"
+        style="width: 626px; height: auto"
+      >
+        <div class="card-body col">
+          {% if pred==1 %}
+            <h4 class="card-title">
+              The probability that the customer will buy the bank term deposit: {{prob}}
+            </h4>
+          {% else %}
+            <h4>There are very less chances that the customer will buy the term deposit. It is advisable
+              to ignore the customer.
+            </h4>
+            {% endif %}
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

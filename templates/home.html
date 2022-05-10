@@ -1,6 +1,8 @@
 {% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
 content %}
 
+<link href="../static/home.css" rel="stylesheet" type="text/css">
+
 <div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
   <div class="container pt-5" stlye="height:100%">
     <!-- <div class="card-deck">
@@ -18,20 +20,21 @@ content %}
         </div>
       </div>
     </div> -->
-
+    
     <div class="homecontainer">
       <h3><span class="material-icons">
-          fingerprint
+        fingerprint
         </span> Welcome Admin!</h3>
-      <img class="homeimg"
-        src="https://www.bportugal.pt/sites/default/files/styles/banner_homepage50/public/imagens/destaques/grande_carrossel_atividade_de_cooperacao.png?itok=y2qvSRZU" />
-
-      <h4><i class="material-icons">lightbulb</i>Solve the puzzle! Find out if the customer will buy the term sheet.
-      </h4>
+      <img class="homeimg" src="https://www.bportugal.pt/sites/default/files/styles/banner_homepage50/public/imagens/destaques/grande_carrossel_atividade_de_cooperacao.png?itok=y2qvSRZU" />
+      
+      <h4>Solve the puzzle! Find out if the customer will buy the term deposit.</h4>
       <h4>Click to find out!</h4>
-
+      
       <div class="flexrow flow-right buttonrow">
-        <button class="confirm" disabled="disabled"><a href="{{url_for('form')}}">Predict</a></button>
+        <a href="{{url_for('form')}}" class="confirm card-link"> Predict </a>
+        <!-- <button type="button" onclick="window.location.href='{{ url_for('form') }}';" >
+          Predict
+        </button> -->
       </div>
     </div>
 
