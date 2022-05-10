@@ -73,22 +73,7 @@ def handle_data():
     pred = pred[0]
     print("prob", prob)
     print("pred", pred)
-    # return render_template("output.html", prob=prob, pred=pred)
-    # print("tell", request.form.to_dict())
-    # form_data = request.form["job"]
-    # form_data1 = request.form["education"]
-    # form_data2 = request.form["age"]
-    # form_data3 = request.form["balance"]
-    # form_data4 = request.form["default"]
-    # form_data5 = request.form["housing"]
-    # form_data6 = request.form["loan"]
-    # print("form data", form_data)
-    # print("form data1", form_data1)
-    # print("form data2", form_data2)
-    # print("form data3", form_data3)
-    # print("form data4", form_data4)
-    # print("form data5", form_data5)
-    # print("form data6", form_data6)
+   
     return render_template("output.html", pred=pred, prob=prob)
     # your code
     # return a response
