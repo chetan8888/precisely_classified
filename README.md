@@ -61,6 +61,7 @@ Label | Description
 |April 11 -  April 18|  Selection of Dataset |
 |April 19 - 26 April|  Data Cleaning & Data Exploration  |
 |April 27 - May 3|  Feature Engineering and Model Implementation |
+|May 4 - May 10 |  Flask App |
 
 
 ## Featured Notebooks/Analysis/Deliverables
