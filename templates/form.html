@@ -1,9 +1,10 @@
 {% extends "base.html" %} {% block title %} Home Page {% endblock %} {% block
 content %}
-<div class="d-flex align-middle p-3 mx-auto" stlye="height:144px; width:626px;">
+<div class="d-flex align-middle p-3 mx-auto" stlye="width: 50%;
+margin: 0 auto;">
   <div class="container pt-5" stlye="height:100%">
     <div class="card-deck" style="justify-content: center; align-items: center">
-      <div class="homecontainer card text-center card border-info mb-3" style="width: 626px; height: auto">
+      <div class="homecontainer card text-center card border-info mb-3"  style="margin-left: 170px; width: 626px;">
         <form action="{{ url_for('handle_data') }}" method="post">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
