@@ -64,10 +64,23 @@ Label | Description
 |May 4 - May 10 |  Flask App |
 
 
-## Featured Notebooks/Analysis/Deliverables
+## Featured Notebooks/Analysis/Deliverables 
 * [Data Exploration](https://www.kaggle.com/code/prank939/cmpe255-finalproject-dataexploration)
 <!-- * [Notebook/Markdown/Slide DeckTitle](link)
 * [Blog Post](link) -->
+## Summarized Data Cleaning Steps
+1. No missing data value (But Attributes[poutcome], job and education contain values like unknown and other)
+2. Handling Outliers in the Balance column
+3. Target variable(Yes/No) - 37784 No and 4870 Yes
+4. Cleaning the month variable. Tranforming months into values
+
+## Summarized Data Exploration 
+1. High Class Imbalance
+2. Majority of the customers contacted by the bank are in the age of 20-40s years
+3. Range of Balance is from -6847 to a maximum of 10443 euros,
+4. People over the age of 60 have lower bank balance
+5. People above the age of 60 and students below the age of 30 show higher probability of subscription of the term deposit.
+6. Students and retired clients account for more than 50% of subscription.
 
 ## Domain Research Reference Papers 
 
