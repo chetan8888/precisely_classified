@@ -89,9 +89,9 @@ Label | Description
 3. [Handling Class Imbalance In Direct Marketing Dataset Using A Hybrid Data and Algorithmic Level Solutions](https://research.gold.ac.uk/id/eprint/17248/1/2016_SAI_Computing_IEEE_Class_imbalance.pdf)
 ## Contributing Team Members
   1. Anupriya
-  2. Chetan
-  3. Pranika
-  4. Rishabh (014682642)
+  2. Chetan Gour (015742285)
+  3. Pranika Kakkar (015569983)
+  5. Rishabh Singhal (014682642)
 
 
 <!-- |[Full Name](https://github.com/[github handle]) |     @janeDoe    | -->
